@@ -48,6 +48,13 @@
                 --bs-btn-active-border-color: #1EC28F;
             }
 
+            .btn-upload {
+                cursor: pointer;
+                display: flex;
+                &:hover {
+                  color: #0073ff;
+                }
+              }
         </style>
     </head>
     <body style="min-height: 100vh;">
@@ -63,7 +70,7 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <h5 class="m-0"><p style="display: inline;">강다솔</p>엔지니어님 환영합니다.</h5>
+                        <h5 class="m-0"><p style="display: inline;">강다솔</p>엔지니어님, 환영합니다.</h5>
                     </div>
                     <div class="col-auto">
                         <div class="collapse navbar-collapse" id="navbarNav">
@@ -134,12 +141,157 @@
             </div>
 
             <!-- 메인 컨텐츠 -->
-            <div class="col p-0">
-
-
+            <div class="col p-0 d-flex justify-content-center">
                 <!-- 메인 내용 -->
-
-
+                <div class="row w-100 h-100 p-0 m-0">
+                    <div class="col-7 border-end border-3 p-0">
+                        <div class="row m-4" style="height: 4%">
+                            <div class="col">
+                                <h4 class="m-0 pt-2">고객 관리</h4>
+                            </div>
+                            <div class="col text-end">
+                                <input type="file" name="file" id="file" style="display: none;">
+                                <label for="file">
+                                    <div class="btn-upload"><i class="bi bi-file-earmark-plus"></i></div>
+                                </label>
+                            </div>
+                        </div>
+                        <table class="table mb-0 table-primary  text-center" style="font-size: 0.9rem;">
+                            <thead>
+                                <colgroup>
+                                    <col width=5%>
+                                    <col width=10%>
+                                    <col width=10%>
+                                    <col width=30%>
+                                    <col width=10%>
+                                    <col width=10%>
+                                    <col width=10%>
+                                    <col width=20%>
+                                </colgroup>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">접수시각</th>
+                                  <th scope="col">고객</th>
+                                  <th scope="col">신고자 의견</th>
+                                  <th scope="col">고객유형</th>
+                                  <th scope="col">중요도</th>
+                                  <th scope="col">전화번호</th>
+                                  <th scope="col">주소</th>
+                              </tr>
+                              </thead>
+                        </table>
+                        <table class="table table-bordered text-center" style="font-size: 0.9rem;">
+                            <tbody>
+                                <colgroup>
+                                    <col width=5%>
+                                    <col width=10%>
+                                    <col width=10%>
+                                    <col width=30%>
+                                    <col width=10%>
+                                    <col width=10%>
+                                    <col width=10%>
+                                    <col width=20%>
+                                </colgroup>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="col p-0">
+                        <div class="m-4" style="height: 4%">
+                            <h4 onclick="location.reload();"><i class="bi bi-arrow-repeat btn-upload" style="justify-content: end;"></i></h4>
+                        </div>
+                        <table class="table table-primary m-0 text-center" style="font-size: 0.9rem;">
+                            <thead>
+                                <colgroup>
+                                    <col width=20%>
+                                    <col width=20%>
+                                    <col width=20%>
+                                    <col width=40%>
+                                </colgroup>
+                                <tr>
+                                    <th scope="col">TM상황</th>
+                                    <th scope="col">응답</th>
+                                    <th scope="col">응답결과</th>
+                                    <th scope="col">판단근거</th>
+                                </tr>
+                                </thead>
+                        </table>
+                        <table class="table table-bordered text-center" style="font-size: 0.9rem;">
+                            <tbody>
+                                <colgroup>
+                                    <col width=20%>
+                                    <col width=20%>
+                                    <col width=20%>
+                                    <col width=40%>
+                                </colgroup>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
