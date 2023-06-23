@@ -16,15 +16,15 @@ i {
 }
 .main{
     display: flex;
-    width: calc(100vw - 8.2vw);
+    /* width: calc(100vw - 8.3vw); */
     height: 90vh;
 }
 .map{
-    width: 50vw;
+    /* width: 50vw; */
     height:90vh;
 }
 .today_construction{
-    width: calc(100vw - 58.2vw);
+    width: 40.5vw;
     height: 90vh;
     text-align: center;
 }
