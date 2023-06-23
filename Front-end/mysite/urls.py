@@ -14,6 +14,7 @@ urlpatterns = [
     path('construction/',include('construction.urls')), # 시외공사
     path('home/',include('home.urls')), # 홈
     path('notice/',include('notice.urls')), # 공지사항
+    path('tmcheck/',include('tmcheck.urls')), # TM확인
 
 ]
 
